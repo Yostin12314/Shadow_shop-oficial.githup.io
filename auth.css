@@ -1,0 +1,29 @@
+[hidden]{display:none!important}
+.auth-modal{max-width:490px}
+.auth-modal form{display:grid;gap:14px;margin-top:22px}
+.auth-modal label,.profile-grid label{display:grid;gap:8px;color:#d9d5e7;font-size:12px;font-weight:700;letter-spacing:.04em}
+.auth-modal input,.profile-grid input{width:100%;border:1px solid rgba(255,255,255,.13);border-radius:12px;background:#100e1b;color:#fff;padding:14px 15px;font:inherit;outline:none;transition:border .2s,box-shadow .2s}
+.auth-modal input:focus,.profile-grid input:focus{border-color:#a45cff;box-shadow:0 0 0 3px rgba(164,92,255,.15)}
+.auth-modal input::placeholder,.profile-grid input::placeholder{color:#777186}
+.btn-full{width:100%;justify-content:center;margin-top:4px}
+.auth-switch{display:block;margin:16px auto 0;background:none;border:0;color:#d8aaff;font:inherit;font-size:13px;cursor:pointer}
+.auth-feedback{min-height:18px;margin:12px 0 0!important;color:#9ee9bd!important;font-size:12px!important}
+.auth-feedback[data-error="true"]{color:#ff8f9f!important}
+.privacy-hint{display:block;color:#898398;font-size:10px;line-height:1.6;margin-top:15px}
+.account-panel{padding:26px;border:1px solid rgba(255,255,255,.1);border-radius:22px;background:linear-gradient(135deg,rgba(31,23,48,.92),rgba(13,12,22,.95));box-shadow:0 18px 60px rgba(0,0,0,.18)}
+.account-logged-out{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.account-symbol{width:58px;height:58px;display:grid;place-items:center;border-radius:18px;background:linear-gradient(135deg,#9d4dff,#ed4baf);font-size:30px;color:white}
+.account-logged-out h3,.profile-meta h3{margin:0 0 5px;color:#fff;font-size:21px}
+.account-logged-out p,.profile-meta p{margin:0;color:#a9a3b8;font-size:13px}
+.account-buttons{display:flex;gap:10px;margin-left:auto;flex-wrap:wrap}
+.profile-head{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.profile-avatar{width:54px;height:54px;display:grid;place-items:center;border-radius:17px;background:linear-gradient(135deg,#a54cff,#ee4eae);font-size:24px;font-weight:900;color:white}
+.profile-meta{flex:1;min-width:170px}
+.profile-meta small{color:#b27bff;font-size:9px;letter-spacing:.17em;font-weight:800}
+.role-chip{padding:7px 10px;border-radius:999px;background:rgba(156,92,255,.14);border:1px solid rgba(177,118,255,.28);color:#d6b3ff;font-size:9px;font-weight:800;letter-spacing:.08em}
+.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}
+.profile-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.account-note{padding:13px 15px;border-left:2px solid #a95aff;background:rgba(169,90,255,.07);color:#aaa4b9;font-size:11px;line-height:1.6;margin:20px 0 0}
+.admin-notice{margin-top:15px;padding:13px 15px;border-radius:12px;background:rgba(75,210,139,.1);border:1px solid rgba(75,210,139,.25);color:#9ee9bd;font-size:12px}
+.signed-in-label{color:#d7cce8;font-size:12px;font-weight:700;align-self:center}
+@media(max-width:640px){.account-panel{padding:19px}.account-logged-out{align-items:flex-start}.account-buttons{width:100%;margin-left:0}.account-buttons .btn{flex:1;justify-content:center}.profile-grid{grid-template-columns:1fr}.profile-actions .btn{flex:1;justify-content:center}.signed-in-label{display:none}}

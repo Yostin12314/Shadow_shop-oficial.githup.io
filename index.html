@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090810">
+  <meta name="description" content="SHADOW SHOP — recargas gaming.">
+  <title>SHADOW SHOP | Cuenta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span class="brand-mark">S</span><span>SHADOW<span class="brand-accent">SHOP</span><small>GAME TOP-UP STORE</small></span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a class="active" href="#inicio">Inicio</a><a href="#juegos">Juegos</a><a href="#cuenta">Mi cuenta</a><a href="#soporte">Soporte</a>
+    </nav>
+    <div class="header-actions" id="authActions">
+      <button class="btn btn-outline" data-open-auth="login">Iniciar sesión</button>
+      <button class="btn btn-primary" data-open-auth="register">Crear cuenta ↗</button>
+    </div>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i> TU UNIVERSO GAMING, A OTRO NIVEL</div>
+        <h1>RECARGA.<br><span>DOMINA.</span><br>REPITE.</h1>
+        <p class="hero-lead">Tus juegos favoritos, tus recargas y tus recompensas. Todo en un solo lugar.</p>
+        <div class="hero-actions"><a class="btn btn-primary btn-large" href="#juegos">Explorar juegos ↗</a><a class="text-link" href="#cuenta">Mi cuenta →</a></div>
+        <div class="hero-stats"><div><strong>3</strong><span>Juegos iniciales</span></div><div><strong>24/7</strong><span>Acceso online</span></div><div><strong>⚡</strong><span>Cuenta segura</span></div></div>
+      </div>
+      <div class="hero-art"><div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-glow"></div><div class="hero-card card-back"><span>PLAYER<br>ONE</span><b>LEVEL UP</b></div><div class="hero-card card-front"><div class="card-top"><span class="live-dot"></span> SHADOW DROP <span>✦</span></div><div class="crystal">◆</div><div class="card-bottom"><small>POWER YOUR GAME</small><strong>UNLEASH<br>YOUR EDGE.</strong></div></div><div class="float-tag tag-top">✦ <span>GAME ON</span></div><div class="float-tag tag-bottom">⚡ <span>FAST TOP-UP</span></div></div>
+    </section>
+
+    <section class="trust-strip wrap"><div><span class="trust-icon">◈</span><span><b>Cuenta personal</b><small>Perfil privado</small></span></div><div><span class="trust-icon">⌁</span><span><b>Seguimiento</b><small>En próximas etapas</small></span></div><div><span class="trust-icon">♢</span><span><b>Atención</b><small>Soporte al cliente</small></span></div><div><span class="trust-icon">✧</span><span><b>Tu cuenta</b><small>Todo organizado</small></span></div></section>
+
+    <section class="section wrap" id="juegos">
+      <div class="section-heading"><div><div class="eyebrow">ELIGE TU CAMPO DE BATALLA</div><h2>JUEGOS <span>POPULARES</span></h2><p>El catálogo comercial se conectará en la etapa 3.</p></div><span class="section-count">CATÁLOGO <b>/ 03</b></span></div>
+      <div class="game-grid">
+        <article class="game-card freefire"><div class="game-art art-ff"><span class="art-label">BATTLE<br>IN STYLE</span><span class="art-symbol">FF</span></div><div class="game-info"><div><span class="game-type">BATTLE ROYALE</span><h3>Free Fire</h3><p>Diamantes y membresías</p></div></div><button class="game-select" data-coming="Free Fire">Próximamente →</button></article>
+        <article class="game-card bloodstrike"><div class="game-art art-bs"><span class="art-label">ENTER THE<br>COMBAT ZONE</span><span class="art-symbol">BS</span></div><div class="game-info"><div><span class="game-type">FPS / ACTION</span><h3>Blood Strike</h3><p>Oro y paquetes del juego</p></div></div><button class="game-select" data-coming="Blood Strike">Próximamente →</button></article>
+        <article class="game-card mlbb"><div class="game-art art-ml"><span class="art-label">LEGENDS<br>NEVER FALL</span><span class="art-symbol">ML</span></div><div class="game-info"><div><span class="game-type">MOBA</span><h3>Mobile Legends</h3><p>Diamantes y ofertas</p></div></div><button class="game-select" data-coming="Mobile Legends">Próximamente →</button></article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="cuenta">
+      <div class="section-heading"><div><div class="eyebrow">TU CENTRO DE CONTROL</div><h2>MI <span>CUENTA</span></h2><p>Inicia sesión para consultar y actualizar tu perfil.</p></div></div>
+      <div class="account-panel" id="accountPanel">
+        <div class="account-logged-out" id="loggedOut">
+          <div class="account-symbol">◎</div><div><h3>Tu espacio SHADOW</h3><p>Regístrate o inicia sesión para acceder a tu perfil.</p></div>
+          <div class="account-buttons"><button class="btn btn-outline" data-open-auth="login">Iniciar sesión</button><button class="btn btn-primary" data-open-auth="register">Crear cuenta ↗</button></div>
+        </div>
+        <div class="account-logged-in" id="loggedIn" hidden>
+          <div class="profile-head"><div class="profile-avatar" id="avatarLetter">S</div><div class="profile-meta"><small>SHADOW ID · PERFIL</small><h3 id="profileName">Jugador</h3><p id="profileEmail"></p></div><span class="role-chip" id="roleChip">CLIENTE</span></div>
+          <div class="profile-grid">
+            <label>Nombre visible<input id="displayName" maxlength="60" autocomplete="name"></label>
+            <label>Teléfono (opcional)<input id="phone" maxlength="30" autocomplete="tel" placeholder="+1..."></label>
+          </div>
+          <div class="profile-actions"><button class="btn btn-primary" id="saveProfile">Guardar perfil</button><button class="btn btn-outline" id="signOut">Cerrar sesión</button></div>
+          <p class="account-note" id="profileNotice" role="status">Tu saldo y tus compras se habilitarán en etapas posteriores. No se muestra ni se acredita dinero en esta versión.</p>
+          <div class="admin-notice" id="adminNotice" hidden>Acceso de administrador detectado. El panel de gestión se desarrollará en una etapa posterior.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-band wrap" id="soporte"><div><div class="eyebrow">¿NECESITAS AYUDA?</div><h2>ESTAMOS DE TU LADO.</h2><p>Los canales de soporte y WhatsApp se configurarán en una etapa posterior.</p></div><div class="steps"><div class="step"><span>01</span><div><b>Cuenta personal</b><small>Autenticación administrada por Supabase.</small></div><i>◇</i></div><div class="step"><span>02</span><div><b>Privacidad</b><small>Los perfiles están protegidos por RLS.</small></div><i>⌁</i></div><div class="step"><span>03</span><div><b>Próximas integraciones</b><small>Pedidos, depósitos y entrega automática.</small></div><i>⚡</i></div></div></section>
+  </main>
+
+  <footer class="footer wrap"><a class="brand" href="#inicio"><span class="brand-mark">S</span><span>SHADOW<span class="brand-accent">SHOP</span><small>GAME TOP-UP STORE</small></span></a><span>© <span id="year"></span> SHADOW SHOP.</span><span class="footer-note">POWER YOUR GAME <b>✦</b></span></footer>
+  <div class="mobile-nav"><a href="#inicio">⌂<small>Inicio</small></a><a href="#juegos">◈<small>Juegos</small></a><a href="#cuenta">◎<small>Cuenta</small></a><a href="#soporte">✧<small>Soporte</small></a></div>
+
+  <div class="modal-backdrop" id="authModal" aria-hidden="true">
+    <div class="modal auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal-close" id="closeAuth" aria-label="Cerrar">×</button>
+      <div class="eyebrow">BIENVENIDO A SHADOW SHOP</div><h2 id="authTitle">ENTRA EN<br><span>LA PARTIDA.</span></h2>
+      <p id="authIntro">Usa tu correo y contraseña para acceder.</p>
+      <form id="authForm" novalidate>
+        <label id="nameField" hidden>Nombre visible<input id="registerName" type="text" maxlength="60" autocomplete="name"></label>
+        <label>Correo electrónico<input id="email" type="email" required autocomplete="email" placeholder="tu@correo.com"></label>
+        <label>Contraseña<input id="password" type="password" required minlength="8" autocomplete="current-password" placeholder="Mínimo 8 caracteres"></label>
+        <button class="btn btn-primary btn-full" id="authSubmit" type="submit">Iniciar sesión ↗</button>
+      </form>
+      <button class="auth-switch" id="switchAuth" type="button">¿No tienes cuenta? Crear una</button>
+      <p class="auth-feedback" id="authFeedback" role="status" aria-live="polite"></p>
+      <small class="privacy-hint">Al registrarte, tus credenciales son gestionadas por Supabase Auth. Nunca compartas tu contraseña.</small>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body></html>
